@@ -28,7 +28,7 @@ class ViewController: UIViewController {
                 self.discPriceLabel.text = "NOW ONLY: Rp\(payload.payload?[0].shop[0].Menus[0].price ?? 0)"
             }
         }
-    }
+    } 
     
     private func getData(from url: String, completion: @escaping (Payload) -> Void){
         URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
